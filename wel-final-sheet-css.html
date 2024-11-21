@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+	<!--
+	Full Name: Reuel Christian Sundiam
+	Section: WD-202
+	Site Name: PRGM
+	Start Date: October 30, 2023
+    Target Finish Date: November 18, 2023
+	-->
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enhance your CSS skills with our comprehensive cheatsheet — enabling you to create stunning and responsive web designs in your web development journey.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/wel-final.min.css">  
+    <link rel = "shortcut icon" href = "assets/images/prgm-favicon.png"/>
+	<link rel = "icon" type = "image/png" sizes = "32x32" href = "assets/images/prgm-favicon-32.png"/>
+	<link rel = "apple-touch-icon" sizes = "180x180" href = "assets/images/prgm-favicon-180.png"/>
+	<link rel = "icon" sizes = "192x192" href = "assets/images/prgm-favicon-192.png"/>     
+    <title>CSS | PRGM</title>
+
+</head>
+
+<body id="top">
+    
+    <!-- HEADER AREA -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <a href="wel-final.html"><img src="assets/images/prgm.png" alt="prgm logo" width="242px" height="60px" class="logo desk"></a>
+
+            <button class="menu-toggle" onclick="hamburger()">&#9776;</button>
+
+            <nav class="navbar container" id="navbar">
+
+                <ul class="navbar-list" id="menu-links">
+                    <li><a href="wel-final.html" class="navbar-link">Home</a></li>
+                    <li><a href="wel-final-cheatsheet.html" class="navbar-link">Cheatsheets</a></li>
+                    <li><a href="wel-final-about.html" class="navbar-link">About</a></li>
+                    <li><a href="wel-final-contact.html" class="navbar-link">Contact Us</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN AREA -->
+
+    <main>
+
+        <section class="about sheet">
+
+            <div class="main-container">
+                
+                <div class="about-container">
+
+                    <div class="about-content">
+
+                        <div class="title-line">
+                            <h2>CSS</h2>
+                            <div class="white-line"></div>
+                        </div>
+
+                        <h1>Cascading Style <br>Sheets</h1>
+
+                        <p><span class="bold">CSS</span> is the language we use to style an HTML document. <span class="bold">Cascading Style Sheets</span> enhances the look and feel of the website by describing how elements should be displayed on screen or in other media.</p>
+
+                    </div>
+
+                    <div class="about-picture">
+                        <video controls poster="assets/images/css-page.jpg">
+                            <source src="assets/media/what-is-css.mp4" type="video/mp4">
+                            <source src="assets/media/what-is-css.webm" type="video/webm">
+                            <track src="assets/media/css-captions.vtt" kind="captions" srclang="en-us" label="English">
+                            <track src="assets/media/css-descriptions.vtt" kind="descriptions" srclang="en-us" label="English Descriptions">
+                            <p>Your browser does not support the video element.</p>
+                        </video>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="html-page">
+
+            <div class="html-content">
+                <h1>CSS Cheatsheet</h1>
+                <div class="horizontal-bottom purpol"></div>
+
+                <div class="css-basics">
+                    <p><span class="bold">Cascading Style Sheet (CSS)</span> is used to set the style in web pages that contain HTML elements. <br><br> There are three main ways to add CSS to your HTML document:</p>
+                    <ul>
+                        <li><span class="bold">Inline CSS</span> - It contains CSS properties in the body section specified within HTML tags.</li>
+                        <li><span class="bold">Internal CSS</span> - CSS is embedded within the HTML file using a style HTML tag.</li>
+                        <li><span class="bold">External CSS</span> - CSS contains a separate CSS file with a .css extension which contains only style property with the help of tag attributes.</li>
+                    </ul>
+                </div>
+
+                <figure>
+                    <img src="assets/images/types-of-css.jpg" alt="sample code of the three main types of css: inline, internal, and external css">
+                    <figcaption>Fig. 1 - Three Types of CSS</figcaption>
+                </figure>
+                
+
+                <h2>CSS Selectors</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Selector</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+
+                    <tr>
+                        <td>universal</td>
+                        <td>The universal selector selects all elements on the webpages.</td>
+                        <td><span class="bold">*</span>{property:value;}</td>
+                    </tr>
+
+                    <tr>
+                        <td>tag</td>
+                        <td>The HTML tag selector selects all HTML tag/element of the given type in your document.</td>
+                        <td><span class="bold">p</span>{property:value;}</td>
+                    </tr>
+
+                    <tr>
+                        <td>id</td>
+                        <td>The id or <span class="bold">#</span> selector selects an element with the same unique id attribute and value.</td>
+                        <td><span class="bold">#id</span>{property:value;}</td>
+                    </tr>
+
+                    <tr>
+                        <td>class</td>
+                        <td>The class or <span class="bold">.</span> selector selects all elements in the document that have the same given class attribute and value.</td>
+                        <td><span class="bold">.class</span>{property:value;}</td>
+                    </tr>
+
+                    <tr>
+                        <td>pseudo</td>
+                        <td>The pseudo selector defines the special state of an element to add an effect to the existing element.</td>
+                        <td>selector:<span class="bold">pseudo-class</span>{property:value;}</td>
+                    </tr>
+
+                </table>
+
+                <figure>
+                    <img src="assets/images/css-selectors.png" alt="sample code of the common css selectors">
+                    <figcaption>Fig. 2 - Common CSS Selectors</figcaption>
+                </figure>
+
+                <h2>CSS Units</h2>
+
+                <div class="css-basics types">
+                    <p>CSS has several different units for expressing a length or width size. <br><br>There are two types of length units used in CSS:</p>
+                    <ul>
+                        <li><span class="bold">Absolute</span></li>
+                        <li><span class="bold">Relative</span></li>
+                    </ul>
+                </div>
+
+                <h2>Absolute Units</h2>
+
+                <div class="css-basics types">
+                    <p>Absolute units are fixed and elements possessing such units will appear exactly that size.</p>
+                    <p><span class="bold">NOTE:</span> Absolute length units are not recommended for use on screen due to the fact that it is not responsive for all device sizes. However, they can be used if the output media is specified, such as for specific screen sizes or the print layout.</p>
+                </div>
+
+                <table>
+
+                    <tr>
+                        <th>Unit</th>
+                        <th>Description</th>
+                    </tr>
+
+                    <tr>
+                        <td>px</td>
+                        <td>The pixels or px unit is one of the most common length units used in CSS. They are relative to the viewing device and <span class="bold">1 pixel is formally defined as 1/96 of an inch</span>.</td>
+                    </tr>
+
+                    <tr>
+                        <td>cm</td>
+                        <td>centimeters</td>
+                    </tr>
+
+                    <tr>
+                        <td>mm</td>
+                        <td>millimeters</td>
+                    </tr>
+
+                    <tr>
+                        <td>in</td>
+                        <td>inches</td>
+                    </tr>
+
+                </table>
+
+                <h2>Relative Units</h2>
+
+                <div class="css-basics types">
+                    <p>Relative units specify a length relative to another length property. Relative length units scale better between different screen mediums.</p>
+                </div>
+
+                <table>
+
+                    <tr>
+                        <th>Unit</th>
+                        <th>Description</th>
+                    </tr>
+
+                    <tr>
+                        <td>em</td>
+                        <td>The em unit is relative to the font-size of the element. <span class="bold">2em would mean 2 times the size of the current font.</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>rem</td>
+                        <td>The rem unit is relative to the font-size of the root element. Unlike the em unit, which may be different for each element, the rem unit is constant throughout the document.</td>
+                    </tr>
+
+                    <tr>
+                        <td>vw</td>
+                        <td>The viewport width unit is relative to 1% of the width of the viewport.</td>
+                    </tr>
+
+                    <tr>
+                        <td>%</td>
+                        <td>The percent unit is relative to the parent element.</td>
+                    </tr>
+
+                </table>
+
+                <h2>CSS Properties</h2>
+
+                <div class="css-basics types">
+                    <p>A <span class="bold">CSS property</span> refers to the style or behavior to an HTML element. <br><br> Examples include:</p>
+                    <ul>
+                        <li>border</li>
+                        <li>margin</li>
+                        <li>padding</li>
+                        <li>font-style</li>
+                        <li>font-size</li>
+                        <li>color</li>
+                        <li>background-color</li>
+                    </ul>
+                </div>
+
+                <h2>CSS Text Properties</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+
+                    <tr>
+                        <td>font-size</td>
+                        <td>The font size property specifies the size of the text element in an HTML document.</td>
+                        <td>p{<span class="bold">font-size: 10px;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>font-family</td>
+                        <td>The font-family property specifies the font family to be used for the selected text element.</td>
+                        <td>p{<span class="bold">font-family: 'Arial';</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>font-style</td>
+                        <td>The font style property styles the text element in: <span class="bold">normal</span>, <span class="bold">italic</span>, or <span class="bold">oblique</span>.</td>
+                        <td>p{<span class="bold">font-style: italic;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>font-weight</td>
+                        <td>The font weight property specifies the thickness or weight of the font depending on its font-family.</td>
+                        <td>p{<span class="bold">font-weight: 700;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>color</td>
+                        <td>The color property sets the color of the text to be used. CSS colors can be specified using: <span class="bold">color names</span>, <span class="bold">RGB values</span>, or <span class="bold">hexadecimal values</span> </td>
+                        <td>p{<span class="bold">color: white;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>text-align</td>
+                        <td>The text align property defines the horizontal alignment of the text. Examples are: <span class="bold">left</span>, <span class="bold">right</span>, <span class="bold">center</span>, <span class="bold">justify</span>, <span class="bold">initial</span>, or <span class="bold">inherit</span>.</td>
+                        <td>p{<span class="bold">text-align: center;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>text-transform</td>
+                        <td>The text transform property changes the case of the text. Examples are: <span class="bold">none</span>, <span class="bold">capitalize</span>, <span class="bold">uppercase</span>, <span class="bold">lowercase</span>, <span class="bold">lowercase</span>, <span class="bold">initial</span>, or <span class="bold">inherit</span>.</td>
+                        <td>p{<span class="bold">text-transform: uppercase;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>text-indent</td>
+                        <td>The text indent property indents the first line of the text block according to the specified size.</td>
+                        <td>p{<span class="bold">text-indent: 3px;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>line-spacing</td>
+                        <td>The line spacing property specifies the spacing between the characters of the text.</td>
+                        <td>p{<span class="bold">line-spacing: 3px;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>line-height</td>
+                        <td>The line height property specifies the space between the lines of the text.</td>
+                        <td>p{<span class="bold">line-height: 3px;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>text-shadow</td>
+                        <td>The text shadow property adds a shadow to the text. It has 4 main properties: <span class="bold">h-shadow</span>, <span class="bold">v-shadow</span>, <span class="bold">blur-radius</span>, and <span class="bold">color</span>.</td>
+                        <td>p{<span class="bold">text-shadow: 3px 3px 3px black;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>word-spacing</td>
+                        <td>The word spacing property specifies the space between the words of lines.</td>
+                        <td>p{<span class="bold">word-spacing: 3px;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>list-style-type</td>
+                        <td>The list style type property specifies the list-item marker, and is used if <span class="bold">list-style-image</span> has no value or if image loading is turned off. The property has many examples including: <span class="bold">none</span>, <span class="bold">asterisks</span>, <span class="bold">box</span>, <span class="bold">circle</span>,  <span class="bold">diamond</span>, <span class="bold">check</span> and many more.</td>
+                        <td>ul{<span class="bold">list-style-type: diamond;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>list-style-image</td>
+                        <td>The list style image property specifies an image a the list item marker.</td>
+                        <td>ul{<span class="bold">list-style-image: url('url')</span>}</td>
+                    </tr>
+
+                </table>
+
+                <h2>CSS Background Properties</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+
+                    <tr>
+                        <td>background-color</td>
+                        <td>The background color property specifies the background color of an element.</td>
+                        <td>body{<span class="bold">background-color: orange;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>background-image</td>
+                        <td>The background image property adds one or more background images to an element.</td>
+                        <td>body{<span class="bold">background-image: url('url');</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>background-repeat</td>
+                        <td>The background repeat property adds or removes the repeat of the background image, both horizontally and vertically. Examples are: <span class="bold">repeat</span>, <span class="bold">repeat-x</span>, <span class="bold">repeat-y</span>, <span class="bold">no-repeat</span>, <span class="bold">initial</span>, or <span class="bold">inherit</span>.</td>
+                        <td>body{<span class="bold">background-repeat: repeat;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>background-position</td>
+                        <td>The background position property specifies the positioning of the image in a certain way in a document. It has 2 main properties: <span class="bold">x-position</span>, and <span class="bold">y-position</span>.</td>
+                        <td>body{<span class="bold">background-position: center center;</span>}</td>
+                    </tr>
+
+                </table>
+
+                <h2>CSS Box Properties</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+    
+                    <tr>
+                        <td>padding</td>
+                        <td>The padding property specifies the space between the border and the content of the selector.</td>
+                        <td>p{<span class="bold">padding: 3px;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>border</td>
+                        <td>The border property sets the element's border width and set the style, and color of an element's border. It 3 main properties: <span class="bold">border-width</span>, <span class="bold">border-style</span>, and <span class="bold">border-color</span>.</td>
+                        <td>p{<span class="bold">border: 3px solid white;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>margin</td>
+                        <td>The margin property is used to set the margin of the box model.</td>
+                        <td>p{<span class="bold">margin: 3px;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>width</td>
+                        <td>The width property is used to set an element's width.</td>
+                        <td>p{<span class="bold">width: 3px;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>height</td>
+                        <td>The height property is used to set an element's height.</td>
+                        <td>p{<span class="bold">height: 3px;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>box-shadow</td>
+                        <td>The box-shadow property adds a shadow-like effect to the box or frames of an element. Similar to the text-shaw property, it also has 4 main properties: <span class="bold">h-shadow</span>, <span class="bold">v-shadow</span>, <span class="bold">blur-radius</span>, and <span class="bold">color</span>.</td>
+                        <td>p{<span class="bold">box-shadow: 3px 3px 3px black;</span>}</td>
+                    </tr>
+
+                </table>
+
+                <figure>
+                    <img src="assets/images/css-box-model.png" alt="illustration of the css box model">
+                    <figcaption>Fig. 3 - CSS Box Model</figcaption>
+                </figure>
+
+                <h2>CSS Classification Properties</h2>
+
+                <div class="css-basics types">
+                    <p>The CSS classification properties allow you to specify how and where and element is displayed.</p>
+                </div>
+
+                <table>
+
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+
+                    <tr>
+                        <td>display</td>
+                        <td>The display property defines how elements are displayed in the webpage.</td>
+                        <td>nav{<span class="bold">display: block;</span>}</td>
+                    </tr>
+
+                </table>
+
+                <div class="css-basics types">
+                    <p>The display property in CSS has many property values. <br><br> These values are:</p>
+                    <ul>
+                        <li><span class="bold">inline</span> - It is used to display an element as an inline element.</li>
+                        <li><span class="bold">block</span> - It is used to display an element as a block element</li>
+                        <li><span class="bold">flex</span> - It is used to display an element as a block-level flex container.</li>
+                        <li><span class="bold">grid</span> - It is used to display an element as a block-level grid container.</li>
+                        <li><span class="bold">inline-block</span> - It is used to display an element as an inline-level block container.</li>
+                        <li><span class="bold">inline-flex</span> - It is used to display an element as an inline-level flex container.</li>
+                        <li><span class="bold">inline-grid</span> - It is used to display an element as an inline-level grid container.</li>
+
+                    </ul>
+                </div>
+
+                <figure>
+                    <img src="assets/images/css-flexbox.png" alt="visual reference of css flexbox">
+                    <figcaption>Fig. 4 - CSS Flexbox</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/images/css-grid.png" alt="visual reference of css grids">
+                    <figcaption>Fig. 5 - CSS Grid</figcaption>
+                </figure>
+
+                <table>
+
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+
+                    <tr>
+                        <td>float</td>
+                        <td>The float property defines the flow of content. Examples are: <span class="bold">none</span>, <span class="bold">left</span>, <span class="bold">right</span>, <span class="bold">initial</span>, or <span class="bold">inherit</span>.</td>
+                        <td>nav{<span class="bold">float: left;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>position</td>
+                        <td>The position property specifies the positioning method of the HTML element on the webpage. Examples are: <span class="bold">fixed</span>, <span class="bold">static</span>, <span class="bold">absolute</span>, <span class="bold">relative </span>, or <span class="bold">sticky</span>.</td>
+                        <td>nav{<span class="bold">position: fixed;</span>}</td>
+                    </tr>
+
+                    <tr>
+                        <td>clear</td>
+                        <td>The clear property sets the sides of an element where no other floating elements are allowed. Examples are: <span class="bold">left</span>, <span class="bold">right</span>, <span class="bold">both</span>, or <span class="bold">none</span>.</td>
+                        <td>nav{<span class="bold">clear: both;</span>}</td>
+                    </tr>
+
+                </table>
+
+                <h2>CSS Media Queries</h2>
+
+                <div class="css-basics types">
+                    <p>The media queries is a CSS technique mainly used for <span class="bold">Responsive Web Design</span>.</p>
+                    <p>It uses the <span class="bold">@media</span> rule to include a block of CSS properties only if the condition is true.</p>
+                </div>
+                <br>
+                <div class="css-basics types">
+                    <p>The <span class="bold">@media</span> rule commonly uses two queries:</p> 
+                    <ul>
+                        <li><span class="bold">max-width</span></li>
+                        <p>Example: @media only screen and (max-width: 600px) {...}</p>
+                        <p>This query means, "if the device width is <span class="bold">less than or equal to 600px</span>, then apply {...}</p> 
+                        <li><span class="bold">min-width</span></li>
+                        <p>Example: @media only screen and (min-width: 600px) {...}</p>
+                        <p>This query means, "if the device width is <span class="bold">greater than or equal to 600px</span>, then apply {...}</p> 
+                    </ul>
+                </div>
+
+                <figure>
+                    <img src="assets/images/css-media-queries.png" alt="visual representation of three different css media queries">
+                    <figcaption>Fig. 6 - CSS Media Queries</figcaption>
+                </figure>
+
+                <h2>Quiz Section</h2>
+
+                <p><small>*CLICK ON THE TEXT TO REVEAL THE ANSWER*</small></p>
+
+                <div class="questions">
+                    <ol>
+                        <li onclick="cssans1()">What is the meaning of CSS?</li>
+                        <li onclick="cssans2()">What is the latest version of CSS??</li>
+                        <li onclick="cssans3()">What is the symbol for the universal selector in CSS?</li>
+                        <li onclick="cssans4()">What are the three ways that you can apply CSS to your webpages?</li>
+                        <li onclick="cssans5()">What is the symbol for the id selector in CSS?</li>
+                    </ol>
+                </div>
+    
+                <div id="answer">
+                    <h2>Answer:</h2>
+                    <p></p>
+                </div>
+
+            </div>
+
+        </section>        
+
+    </main>
+
+    <!-- FOOTER AREA -->
+
+    <footer class="footer">
+
+        <div class="">
+    
+            <p class="copyright">Copyright &copy; 2023. All Rights Reserved. Created by Reuel Christian Sundiam</p>
+            <p><a href = "mailto:prgmcheatsheets@gmail.com">prgmcheatsheets@gmail.com</a>
+            <p class = "tel-link"><a href = "tel=09123456789">0912-345-6789</a></p>  
+    
+            <ul class="footer-list">
+
+                <li>
+                    <a href="https://www.facebook.com/christructure" target="_blank"><img src="./assets/images/fb.jpg" alt="facebook logo"></a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/christructure" target="_blank"><img src="./assets/images/ig.jpg" alt="instagram logo"></a>
+                </li>
+
+            </ul>
+    
+        </div>
+
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>

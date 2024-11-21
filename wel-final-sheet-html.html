@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+	<!--
+	Full Name: Reuel Christian Sundiam
+	Section: WD-202
+	Site Name: PRGM
+	Start Date: October 30, 2023
+    Target Finish Date: November 18, 2023
+	-->
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="From basic structure to advanced features, find syntax examples and usage guidelines to enhance your HTML coding skills here at PRGM.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/wel-final.min.css">
+    <link rel = "shortcut icon" href = "assets/images/prgm-favicon.png"/>
+	<link rel = "icon" type = "image/png" sizes = "32x32" href = "assets/images/prgm-favicon-32.png"/>
+	<link rel = "apple-touch-icon" sizes = "180x180" href = "assets/images/prgm-favicon-180.png"/>
+	<link rel = "icon" sizes = "192x192" href = "assets/images/prgm-favicon-192.png"/>     
+    <title>HTML | PRGM</title>
+
+</head>
+
+<body id="top">
+    
+    <!-- HEADER AREA -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <a href="wel-final.html"><img src="assets/images/prgm.png" alt="prgm logo" width="242px" height="60px" class="logo desk"></a>
+
+            <button class="menu-toggle" onclick="hamburger()">&#9776;</button>
+
+            <nav class="navbar container" id="navbar">
+
+                <ul class="navbar-list" id="menu-links">
+                    <li><a href="wel-final.html" class="navbar-link">Home</a></li>
+                    <li><a href="wel-final-cheatsheet.html" class="navbar-link">Cheatsheets</a></li>
+                    <li><a href="wel-final-about.html" class="navbar-link">About</a></li>
+                    <li><a href="wel-final-contact.html" class="navbar-link">Contact Us</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN AREA -->
+
+    <main>
+
+        <section class="about sheet">
+
+            <div class="main-container">
+                
+                <div class="about-container">
+
+                    <div class="about-content">
+
+                        <div class="title-line">
+                            <h2>HTML</h2>
+                            <div class="white-line"></div>
+                        </div>
+
+                        <h1>HyperText Markup Language</h1>
+
+                        <p><span class="bold">HTML</span>, short for <span class="bold">HyperText Markup Language</span>, is the foundation of all web pages. Without it, you wouldn’t be able to organize text or add images or videos to your pages.</p>
+
+                    </div>
+
+                    <div class="about-picture">
+                        <video controls poster="assets/images/html-page.jpeg">
+                            <source src="assets/media/what-is-html.mp4" type="video/mp4">
+                            <source src="assets/media/what-is-html.webm" type="video/webm">
+                            <track src="assets/media/html-captions.vtt" kind="captions" srclang="en-us" label="English">
+                            <track src="assets/media/html-descriptions.vtt" kind="descriptions" srclang="en-us" label="English Descriptions">
+                            <p>Your browser does not support the video element.</p>
+                        </video>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CHEATSHEET AREA -->
+
+        <section class="html-page">
+
+            <div class="html-content">
+                <h1>HTML Cheatsheet</h1>
+                <div class="horizontal-bottom purpol"></div>
+
+                <h2>Document Summary</h2>
+
+                <table>
+                    
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;html&gt;</td>
+                        <td>The html tag shows up at the beginning and end of an HTML
+                            document (known as the root element). All HTML documents must start with a <span class="bold">&lt;!DOCTYPE&gt;</span> declaration and it also indicates that the webpage is written in HTML5.</td>
+                        <td>&lt;html&gt; ... &lt;/html&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;title&gt;</td>
+                        <td>The title tag is the title for that page. It is typically seen
+                            in a browser's tab bar and is useful for search engines when it scans
+                            and indexes your webpage.</td>
+                        <td>&lt;title&gt; ... &lt;/title&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;head&gt;</td>
+                        <td>The head section contains information of that specific page, including the
+                            title tags, meta data, custom fonts, and links to scripts and style sheets.</td>
+                        <td>&lt;head&gt; ... &lt;/head&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;body&gt;</td>
+                        <td>The body section includes all content that will be shown to users,
+                            including everything they'll see & read such as text, images, videos, etc.</td>
+                        <td>&lt;body&gt; ... &lt;/body&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;main&gt;</td>
+                        <td>The main tag represents the main dominant content of a document.</td>
+                        <td>&lt;main&gt; ... &lt;/main&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;header&gt;</td>
+                        <td>The header tag represents a container for introductory content or a set
+                            of navigational links. It typically contains: one or more heading elements,
+                            a logo or an icon, and/or authorship information.</td>
+                        <td>&lt;header&gt; ... &lt;/header&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;footer&gt;</td>
+                        <td>The footer tag defines a footer block for a document or section.</td>
+                        <td>&lt;footer&gt; ... &lt;/footer&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;nav&gt;</td>
+                        <td>The nav tag defines a set of navigational links.</td>
+                        <td>&lt;nav&gt; ... &lt;/nav&gt;</td>
+                    </tr>
+
+                </table>
+
+                <figure>
+                    <img src="assets/images/html-basic-format (1).PNG" alt="basic format of an html page">
+                    <figcaption>Fig. 1 - Basic HTML Structure</figcaption>
+                </figure>
+
+                <h2>Document Information</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;meta&gt;</td>
+                        <td>Meta data includes additional information about the
+                            page, including the page's description, author, publish
+                            date, keywords and other typically 'hidden' page information or properties.</td>
+                        <td>&lt;meta ... /&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;link&gt;</td>
+                        <td>The link tag can be used to a create relationships with external pages
+                            or documents, including style sheets and custom fonts.</td>
+                        <td>&lt;link ... /&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;style&gt;</td>
+                        <td>Although it is recommended to use external styling, the style tag includes document style information, typically defaulting to CSS, that you can use to style elements on your webpage.</td>
+                        <td>&lt;style&gt; ... &lt;/style&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;script&gt;</td>
+                        <td>This element includes all scripting information, or links to
+                            external scripts, You can also include this element in the
+                            body to dynamically generate content and add functionality to your website.</td>
+                        <td>&lt;script&gt; ... &lt;/script&gt;</td>
+                    </tr>
+
+                </table>
+
+                <h2>Document Structure</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;div&gt;</td>
+                        <td>The div tag is used to define a page section or division in a webpage. It
+                            can also be used as a container for HTML elements &mdash; which then can be
+                            manipulated with CSS or JavaScript.</td>
+                        <td>&lt;div&gt; ... &lt;/div&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;span&gt;</td>
+                        <td>The span tag works similarly with the div tag, however, it is an inline 
+                            element compared to the div tag being a block-level element.</td>
+                        <td>&lt;span&gt; ... &lt;/span&gt;</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>&lt;article&gt;</td>
+                        <td>The article tag identifies an article inside a document. For example, you 
+                            can enclose a blog post or a news story inside an article tag to section it
+                            differently from the rest of the website.</td>
+                        <td>&lt;article&gt; ... &lt;/article&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;aside&gt;</td>
+                        <td>The aside tag defines some content aside from the content it is placed in.</td>
+                        <td>&lt;aside&gt; ... &lt;/aside&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>The br tag creates a line tag and is useful for writing blocks of text 
+                            that need to be on a new or different line.</td>
+                        <td>&lt;br/&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;hr&gt;</td>
+                        <td>The hr tag creates a horizontal rule or line and can be used to denote a change in topic or section of a page.
+                        </td>
+                        <td>&lt;hr/&gt;</td>
+                    </tr>
+
+                </table>
+
+                <h2>HTML Attributes</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+
+                    <tr>
+                        <td>id</td>
+                        <td>The id attribute specifies a unique id for an HTML element. It is used to point to a specific style declaration in a style sheet or it can also be used to manipulate the element using JavaScript.</td>
+                        <td>&lt;tag <br><span class="bold">id="#..."</span> &gt; ... &lt;/tag&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>class</td>
+                        <td>The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.</td>
+                        <td>&lt;tag <br><span class="bold">class="..."</span>&gt; ... &lt;/tag&gt;</td>
+                    </tr>
+
+                </table>
+
+                <h2>HTML Text</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>The paragraph tag is one of the foundational tags in HTML and is used to
+                            organize paragraphs of text.</td>
+                        <td>&lt;p&gt; ... &lt;/p&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;h1-h6&gt;</td>
+                        <td>The six levels of headings, with 1 being the most important
+                            and 6 being the least on a page. These elements are used
+                            to describe content sections on a page.</td>
+                        <td>&lt;h1-h6&gt; ... &lt;/h1-h6&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;strong&gt;</td>
+                        <td>The strong tag, exactly like it sounds, is placed on a text block and indicates
+                            STRONG emphasis &mdash; often displayed bold in most browsers.</td>
+                        <td>&lt;strong&gt; ... &lt;/strong&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;sub&gt;</td>
+                        <td>The sub tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. They are often used in math statements or chemical formulas.</td>
+                        <td>&lt;sub&gt; ... &lt;/sub&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;sup&gt;</td>
+                        <td>The sup tag defines superscript. text. In contrast to subscript text, superscript text are placed at half a character above the normal line. They are often seen in exponents in mathematical equations.</td>
+                        <td>&lt;sup&gt; ... &lt;/sup&gt;</td>
+                    </tr>
+
+                </table>
+
+                <h2>HTML Lists</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;ol&gt;</td>
+                        <td>The ordered list tag defines an ordered list &mdash; showing sequential order,
+                            preference or priority. The list can be numerical or alphabetical.</td>
+                        <td>&lt;ol&gt; ... &lt;/ol&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;ul&gt;</td>
+                        <td>The unordered list tag, in contrast with the ordered list, defines a bulleted list without any emphasis on order of importance.</td>
+                        <td>&lt;ul&gt; ... &lt;/ul&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;li&gt;</td>
+                        <td>The list tag is used to define each list item inside an ordered or unordered list. They are nested inside an &lt;ol&gt; or &lt;ul&gt; tag.</td>
+                        <td>&lt;ol&gt;<br><span class="bold">&lt;li&gt; ... &lt;/li&gt;</span>&lt;/ol&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;dl&gt;</td>
+                        <td>The &lt;dl&gt; tag represents a description list.</td>
+                        <td>&lt;dl&gt; ... &lt;/dl&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;dt&gt; & &lt;dd&gt;</td>
+                        <td>The &lt;dt&gt; and &lt;dd&gt; defines terms/names and describes each term/name respectively. They are nested inside a <span class="bold">&lt;dl&gt;</span> tag.</td>
+                        <td>&lt;dl&gt;<br><span class="bold">&lt;dt&gt; ... &lt;/dt&gt;<br>&lt;dd&gt; ... &lt;/dd&gt;</span>&lt;/dl&gt;</td>
+                    </tr>
+
+                </table>
+
+                <figure>
+                    <img src="assets/images/html-lists-basic-format.PNG" alt="basic strucutre of html lists">
+                    <figcaption>Fig. 2 - HTML Lists Structure</figcaption>
+                </figure>
+
+                <h2>HTML Links</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;a&gt;</td>
+                        <td>The anchor tag is used to define a hyperlink and used to link one page to another.</td>
+                        <td>&lt;a&gt; ... &lt;/a&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>href</td>
+                        <td>The href attribute of the &lt;a&gt; tag indicates the link's destination or the URL.</td>
+                        <td>&lt;a href="..."&gt; ... &lt;/a&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>mailto</td>
+                        <td>The mailto attribute is used to link an email address and will often open your default mailing app.</td>
+                        <td>&lt;a href="mailto:..."&gt; ... &lt;/a&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>tel</td>
+                        <td>The tel attribute is used to link a phone number and will often open your default 'phone' app &mdash; especially useful for mobile users.</td>
+                        <td>&lt;a href="tel:..."&gt; ... &lt;/a&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>#</td>
+                        <td>The # or id attribute is used in &lt;a&gt; to link to another section on the same page, specifically to an element with the same id attribute.</td>
+                        <td>&lt;a href="#..."&gt; ... &lt;/a&gt;</td>
+                    </tr>
+
+                </table>
+
+                <h2>HTML Media</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>The image tag is used to embed an image in an HTML page. An image can also be used as a link by nesting an <span class="bold">&lt;a&gt;</span> tag inside an &lt;img&gt; tag.</td>
+                        <td>&lt;img .../&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;video&gt;</td>
+                        <td>The video tag is used to embed a video in an HTML page, such as a video clip or other video streams. There are three supported video formats in HTML: <span class="bold">MP4</span>, <span class="bold">WebM</span>, and <span class="bold">OGG</span>.</td>
+                        <td>&lt;video&gt; ... &lt;/video&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;source&gt;</td>
+                        <td>The video tag contains <span class="bold">&lt;source&gt;</span> tags with different video sources. They are nested inside the &lt;video&gt; tag and the browser will then choose the first source it supports.</td>
+                        <td>&lt;video&gt;<span class="bold">&lt;source src="..."&gt;</span>&lt;/video&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>src</td>
+                        <td>The src attribute specifies the url or path to the file of the image or the video to display.</td>
+                        <td>&lt;img src="..."/&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>alt</td>
+                        <td>The alt attribute specifies an alternative text for the image &mdash; especially useful if the image cannot be displayed.</td>
+                        <td>&lt;img alt="..."/&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;map&gt;</td>
+                        <td>The map tag is used to define an image map. A map is an interactive image with clickable areas. The <span class="bold">name</span> attribute is a required attribute and creates a relationship between the image and the map.</td>
+                        <td>&lt;map&gt; ... &lt;/map&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;area&gt;</td>
+                        <td>The map tag contains <span class="bold">&lt;area&gt;</span> tags with different video sources. They are nested inside the &lt;map&gt; tag is used to specify the area of the image map to be customized.</td>
+                        <td>&lt;map&gt;<span class="bold">&lt;area ... &gt; </span>&lt;/map&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;figure&gt;</td>
+                        <td>The figure tag is an independent content block featuring diagrams, photos, illustrations, or more.</td>
+                        <td>&lt;figure&gt; ... &lt;/figure&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;figcaption&gt;</td>
+                        <td>The figure caption tag is used to add a caption or description to the figure. It is nested inside the <span class="bold">&lt;figure&gt;</span> tag</td>
+                        <td>&lt;figure&gt; <span class="bold">&lt;figcaption&gt; ... &lt;/figcaption&gt;</span> &lt;/figure&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;iframe&gt;</td>
+                        <td>The inline frame tag is used to embed another document within the current HTML document. It is often used in embedding a map to your website.</td>
+                        <td>&lt;iframe&gt; ... &lt;/iframe&gt;</td>
+                    </tr>
+                    
+
+                </table>
+
+                <h2>HTML Forms</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;form&gt;</td>
+                        <td>The form tag is used to create an HTML form for user input.</td>
+                        <td>&lt;form ... &gt; <br>... &lt;/form&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;fieldset&gt;</td>
+                        <td>The fieldset tag is used to group related elements in a form and draws a box around the related elements. It is nested inside a <span class="bold">&lt;form&gt;</span> tag.</td>
+                        <td>&lt;form ... &gt;<span class="bold">&lt;fieldset ... &lt;/fieldset&gt;</span>&lt;/form&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;label&gt;</td>
+                        <td>The label tag defines a label for the form element. It is nested inside a <span class="bold">&lt;form&gt;</span> tag.</td>
+                        <td>&lt;form ... &gt;<span class="bold">&lt;label for="..." &lt;/label&gt;</span>&lt;/form&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;input&gt;</td>
+                        <td>The input tag specifies an input field where the user can enter data. It is nested inside the <span class="bold">&lt;form&gt;</span> tag. It can also be displayed in several ways, depending on the <span class="bold">type</span> attribute.</td>
+                        <td>&lt;form ... &gt;<span class="bold">&lt;input ... &lt;/input&gt;</span>&lt;/form&gt;</td>
+                    </tr>
+
+                </table>
+
+                <div class="types">
+                    <p>The different input types are as follows:</p>
+                    <ul>
+                        <li>type="button"</li>
+                        <li>type="checkbox"</li>
+                        <li>type="color"</li>
+                        <li>type="date"</li>
+                        <li>type="datetime-local"</li>
+                        <li>type="email"</li>
+                        <li>type="file"</li>
+                        <li>type="hidden"</li>
+                        <li>type="image"</li>
+                        <li>type="month"</li>
+                        <li>type="number"</li>
+                        <li>type="password"</li>
+                        <li>type="radio"</li>
+                        <li>type="range"</li>
+                        <li>type="reset"</li>
+                        <li>type="search"</li>
+                        <li>type="submit"</li>
+                        <li>type="tel"</li>
+                        <li>type="text" <span class="bold">(default value)</span></li>
+                        <li>type="time"</li>
+                        <li>type="url"</li>
+                        <li>type="week"</li>
+                    </ul>
+                </div>
+
+                <table>
+
+                    <tr>
+                        <td>&lt;select&gt; & &lt;option&gt;</td>
+                        <td>The select tag is used to create a drop-down list. The <span class="bold">&lt;option&gt;</span> tag is nested inside the &lt;select&gt; tag and defines the available options in the drop-down list.</td>
+                        <td>&lt;select&gt; &lt;option ... &gt; &lt;/option&gt; &lt;/select&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;textarea&gt;</td>
+                        <td>The textarea tag creates a textbox used to collect user inputs like comments, reviews, or messages. The size of a text area is specified by the <span class="bold">cols</span> and <span class="bold">rows</span> attributes (or with CSS).</td>
+                        <td>&lt;textarea&gt; ... &lt;/textarea&gt;</td>
+                    </tr>
+
+                </table>
+
+                <figure>
+                    <img src="assets/images/html-forms-basic-format.png" alt="basic strucutre of html forms">
+                    <figcaption>Fig. 3 - HTML Forms Structure</figcaption>
+                </figure>
+
+                <h2>HTML Tables</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Syntax</th>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>The table tag defines an HTML table and contains all table-related content in the webpage. An HTML table consists of one &lt;table&gt; element and one or more <span class="bold">&lt;tr&gt;</span>, <span class="bold">&lt;th&gt;</span>, and <span class="bold">&lt;td&gt;</span> elements.</td>
+                        <td>&lt;table&gt; ... &lt;/table&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;caption&gt;</td>
+                        <td>The caption tag defines a table caption and must be inserted immediately after the <span class="bold">&lt;table&gt;</span> tag, if to be used.</td>
+                        <td>&lt;table&gt; <span class="bold">&lt;caption&gt; ...  &lt;/caption&gt;</span> &lt;/table&gt;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;tr&gt;, &lt;th&gt;, and &lt;td&gt;</td>
+                        <td>The table row tag contains the information to be included in a single row of an HTML table. It can contain one or more <span class="bold">&lt;th&gt;</span> and <span class="bold">&lt;td&gt;</span> elements. <br><br> The table header contains the header cell and header information in an HTML table. <br><br> The table data tag defines a standard data cell in an HTML table.</td>
+                        <td>&lt;table&gt; <br> <span class="bold">&lt;tr&gt; <br> &lt;th&gt; ... &lt;/th&gt; &lt;/tr&gt; <br> &lt;tr&gt; <br> &lt;td&gt; ... &lt;/td&gt; &lt;/tr&gt;</span> <br> &lt;/table&gt;</td> 
+                    </tr>
+
+                </table>
+
+                <figure>
+                    <img src="assets/images/html-table-basic-format.png" alt="basic structure of html tables">
+                    <figcaption>Fig. 4 - HTML Tables Structure</figcaption>
+                </figure>
+
+                <h2>Quiz Section</h2>
+
+                <p><small>*CLICK ON THE TEXT TO REVEAL THE ANSWER*</small></p>
+
+                <div class="questions">
+                    <ol>
+                        <li onclick="htmlans1()">What is the meaning of HTML?</li>
+                        <li onclick="htmlans2()">If you watched the video, who invented the world's first web browser?</li>
+                        <li onclick="htmlans3()">What language did he use as a basis to publish the World Wide Web?</li>
+                        <li onclick="htmlans4()">What is the latest version of HTML?</li>
+                        <li onclick="htmlans5()">What does the &lt;!DOCTYPE&gt; declaration indicate?</li>
+                    </ol>
+                </div>
+    
+                <div id="answer">
+                    <h2>Answer:</h2>
+                    <p></p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER AREA -->
+
+    <footer class="footer">
+
+        <div class="">
+    
+            <p class="copyright">Copyright &copy; 2023. All Rights Reserved. Created by Reuel Christian Sundiam</p>
+            <p><a href = "mailto:prgmcheatsheets@gmail.com">prgmcheatsheets@gmail.com</a>
+            <p class = "tel-link"><a href = "tel=09123456789">0912-345-6789</a></p>  
+    
+            <ul class="footer-list">
+
+                <li>
+                    <a href="https://www.facebook.com/christructure" target="_blank"><img src="./assets/images/fb.jpg" alt="facebook logo"></a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/christructure" target="_blank"><img src="./assets/images/ig.jpg" alt="instagram logo"></a>
+                </li>
+
+            </ul>
+    
+        </div>
+
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>

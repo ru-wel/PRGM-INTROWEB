@@ -1,0 +1,205 @@
+WEBVTT
+
+NOTE
+Captions for the PRGM CSS Video
+Student Name: Reuel Christian Sundiam
+Section: WD-202
+File Name: css-captions.vtt
+
+00:00:00.100 --> 00:00:03.200
+Cascading Style Sheets, or CSS, is a style
+
+00:00:03.200 --> 00:00:04.900
+sheet language famous for making
+
+00:00:04.900 --> 00:00:06.000
+websites look pretty.
+
+00:00:06.100 --> 00:00:08.100
+By default, a browser will render
+
+00:00:08.100 --> 00:00:10.700
+HTML as a boring black and white document.
+
+00:00:10.850 --> 00:00:13.650
+CSS allows you to describe the presentation
+
+00:00:13.650 --> 00:00:16.050
+of this markup by modifying the size,
+
+00:00:16.050 --> 00:00:19.150
+color, positioning, and layout of HTML elements.
+
+00:00:19.150 --> 00:00:21.880
+It was first released in 1996 and evolved
+
+00:00:21.880 --> 00:00:24.440
+into CSS 3 by 1999.
+
+00:00:24.440 --> 00:00:26.240
+The language continues to evolve to this
+
+00:00:26.240 --> 00:00:27.640
+day with new features, but there
+
+00:00:27.640 --> 00:00:29.960
+will never be a CSS 4, just updates
+
+00:00:30.040 --> 00:00:31.280
+to the existing language.
+
+00:00:31.280 --> 00:00:33.840
+The typical CSS rule starts with a selector
+
+00:00:33.880 --> 00:00:36.800
+that can be matched to an element in the HTML document.
+
+00:00:36.920 --> 00:00:39.320
+You then use braces to create a declaration
+
+00:00:39.320 --> 00:00:41.240
+block that contain properties that change
+
+00:00:41.240 --> 00:00:42.600
+the appearance of that element.
+
+00:00:42.680 --> 00:00:44.680
+This is known as a CSS rule.
+
+00:00:44.800 --> 00:00:47.640
+But the tricky thing is that style sheets cascade.
+
+00:00:47.640 --> 00:00:49.320
+A style sheet might contain multiple
+
+00:00:49.320 --> 00:00:51.200
+rules that apply to the same element.
+
+00:00:51.200 --> 00:00:53.100
+This creates a hierarchy and rules
+
+00:00:53.100 --> 00:00:54.400
+that are more specific will
+
+00:00:54.400 --> 00:00:56.000
+overwrite the rules of their parents.
+
+00:00:56.000 --> 00:00:58.920
+In other words, the order of your CSS rules matter.
+
+00:00:58.920 --> 00:01:00.560
+In addition, some elements will
+
+00:01:00.560 --> 00:01:02.120
+inherit the styles of their parent,
+
+00:01:02.240 --> 00:01:03.400
+but others will not.
+
+00:01:03.440 --> 00:01:05.800
+Ultimately, the browser uses the concepts
+
+00:01:05.800 --> 00:01:08.480
+of cascade, specificity and inheritance
+
+00:01:08.480 --> 00:01:10.880
+to control which styles are applied to an element.
+
+00:01:10.880 --> 00:01:13.000
+To get started, open up a style tag
+
+00:01:13.000 --> 00:01:14.600
+in any HTML document.
+
+00:01:14.720 --> 00:01:16.560
+A selector can target all HTML
+
+00:01:16.560 --> 00:01:18.520
+elements of a certain type, multiple
+
+00:01:18.520 --> 00:01:20.000
+related elements with a custom
+
+00:01:20.000 --> 00:01:22.280
+class, or a single element with an ID.
+
+00:01:22.360 --> 00:01:25.320
+Now think of every HTML element like a box.
+
+00:01:25.360 --> 00:01:26.680
+The content is in the middle,
+
+00:01:26.680 --> 00:01:29.240
+followed by padding, border, and a margin.
+
+00:01:29.240 --> 00:01:31.280
+The amount of real estate used by every
+
+00:01:31.280 --> 00:01:33.840
+area in the box can be customized by defining
+
+00:01:33.840 --> 00:01:35.800
+properties like padding and margin.
+
+00:01:35.800 --> 00:01:37.680
+They can take explicit pixel values
+
+00:01:37.760 --> 00:01:39.120
+or responsive values that are
+
+00:01:39.120 --> 00:01:41.640
+relative to the parent element or a percentage
+
+00:01:41.640 --> 00:01:42.760
+of the viewport itself.
+
+00:01:42.880 --> 00:01:44.840
+Now these boxes will bump into each other
+
+00:01:44.840 --> 00:01:46.720
+to make up a web page, but you can use
+
+00:01:46.720 --> 00:01:48.600
+tools like flex layout and grid
+
+00:01:48.600 --> 00:01:50.200
+layout to control how they flow
+
+00:01:50.200 --> 00:01:51.880
+together in a sophisticated way.
+
+00:01:52.000 --> 00:01:54.000
+It can also detect user interaction
+
+00:01:54.000 --> 00:01:55.680
+with pseudo selectors like hover.
+
+00:01:55.680 --> 00:01:57.760
+CSS also makes it possible to add
+
+00:01:57.760 --> 00:02:00.750
+logic to your code with variables or custom properties
+
+00:02:01.000 --> 00:02:04.000
+and by making media queries that can apply styles conditionally
+
+00:02:04.000 --> 00:02:06.250
+based on the size or type of device.
+
+00:02:06.255 --> 00:02:08.450
+And it can even handle complex animations
+
+00:02:08.450 --> 00:02:10.450
+with transitions and keyframes.
+
+00:02:10.460 --> 00:02:13.150
+This has been Cascading Style Sheets in 100 Seconds.
+
+00:02:13.250 --> 00:02:14.850
+Hit the like button and subscribe
+
+00:02:14.950 --> 00:02:16.550
+if you want to see more short videos like this.
+
+00:02:16.555 --> 00:02:19.550
+Thanks for watching and I will see you in the next one.
